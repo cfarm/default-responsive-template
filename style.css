@@ -1,0 +1,252 @@
+/*Simple Default Responsive Stylesheet*/
+/* Reset */
+html,
+body,
+body div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+}
+.clearfix:after {
+  clear: both;
+}
+
+/* Typography, Borders, Backgrounds */
+
+html {
+	background:#fff;
+}
+
+body {
+	font-family:Helvetica, Arial, sans-serif;
+	font-size:1em;
+}
+
+a {
+	color:#006;
+	text-decoration:none;
+}
+
+a:hover, a:active {
+	text-decoration:underline;
+}
+
+
+/* Layout */
+
+/*Box sizing for a better box model!*/
+* { 
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box; 
+	*behavior: url(/js/boxsizing.htc);
+}
+
+body {
+}
+
+header, div.callout, div[role="main"], footer {
+	width:75.68359375%; /* 775px/1024px */
+	margin:0 auto;
+	background:red;
+}
+
+footer[role="contentinfo"] {
+}
+
+/* Header */
+header {
+
+}
+
+
+/* Content */
+div[role="main"] {
+
+}
+
+
+/* Navigation */
+
+nav[role="navigation"] {
+
+}
+
+
+
+/* Footer: Sitemap/Events */
+
+footer[role="contentinfo"] {
+}
+
+/* Firefox only */
+
+
+@-moz-document url-prefix() {
+
+/*Firefox hack styles go here*/
+
+}
+
+
+/* Large screen styles */
+
+@media only screen and (min-width:600px) {
+
+header, div[role="main"], footer {
+max-width:775px;
+}
+
+
+}
+
+
+/* Small screen styles */
+
+@media only screen and (max-width:600px) {
+
+header, div[role="main"], footer {
+	width:99%;
+}
+
+img {
+	max-width: 100% !important;
+}
+
+}
+
+/* Print Styles */
+
+@media print {
+* {
+	background: transparent !important;
+	color: black !important;
+	box-shadow: none !important;
+	text-shadow: none !important;
+	filter: none !important;
+	ms-filter: none !important;
+}
+
+html, body {
+	border:0;
+	padding:0;
+}
+
+header {
+	padding:0;
+}
+
+footer {
+	font-size:0.8em;
+}
+
+h1 {
+	font-size:2em;
+}
+
+h2, h3 {
+	page-break-after: avoid;
+}
+pre, blockquote {
+	border: 1px solid #808080;
+	page-break-inside: avoid;
+}
+a, a:visited {
+	text-decoration: underline;
+}
+a[href]:after {
+	content: " (" attr(href) ")";
+}
+img {
+	max-width: 100% !important;
+	page-break-inside: avoid;
+}
+tr {
+	page-break-inside: avoid;
+}
+}
